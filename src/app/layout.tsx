@@ -18,28 +18,11 @@ export const metadata: Metadata = {
     siteId: "723191637950775296",
     creator: "@mcpeaps_HD",
     creatorId: "723191637950775296",
-    images: [
-      {
-        url: "https://mahd.comboompunksucht.app/pictures/logo.PNG",
-        alt: "Logo of mcpeaps_HD", // Alt attribute for Twitter image
-        width: 3000,
-        height: 3000,
-      },
-    ], // Must be an absolute URL
   },
   openGraph: {
     type: "website",
     title: "Live Wallpaper",
     description: "customizable Live Wallpaper",
-    url: "https://mahd.comboompunksucht.app/live-wallpaper",
-    images: [
-      {
-        url: "https://mahd.comboompunksucht.app/pictures/logo.PNG",
-        alt: "Logo of mcpeaps_HD", // Alt attribute for Twitter image
-        width: 3000,
-        height: 3000,
-      },
-    ],
   },
   robots: {
     index: true,
@@ -72,20 +55,18 @@ export default function RootLayout({
     <html lang="de" suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="theme-color" content="#010101" />
-        <meta name="start_url" content="https://mahd.comboompunksucht.app/" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#010101" />
+        <meta name="theme-color" content="#2E3440" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#2E3440" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-title" content="Live Wallpaper" />
-        <meta name="application-name" content="Fabian Aps" />
-        <meta name="msapplication-TileColor" content="#010101" />
+        <meta name="application-name" content="Live Wallpaper" />
+        <meta name="msapplication-TileColor" content="#2E3440" />
         <meta charSet="UTF-8" />
         <link rel="manifest" href="/manifest.webmanifest" />
-        <link rel="sitemap" href="/sitemap" />
         <meta
           name="keywords"
-          content="portfolio, website, impressum, github, linkedin, aps, fabian"
+          content="Live, Wallpaper, customizable, Live Wallpaper"
         />
         <meta
           name="format-detection"
