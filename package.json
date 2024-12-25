@@ -17,9 +17,6 @@
     ]
   },
   "dependencies": {
-    "@vercel/analytics": "^1.4.1",
-    "@vercel/flags": "^2.6.3",
-    "@vercel/speed-insights": "^1.1.0",
     "@withgraphite/graphite-cli": "^1.4.8",
     "babel-plugin-react-compiler": "^19.0.0-beta-df7b47d-20241124",
     "clsx": "^2.1.1",

@@ -1,10 +1,6 @@
 import { type NextRequest, NextResponse } from 'next/server';
-import { example_flag } from './flags';
 
 export async function middleware(request: NextRequest) {
-  const example_flag_local = example_flag();
-  console.log(example_flag_local);
-
   const response = NextResponse.rewrite(request.url);
 
   // Add CORS headers
