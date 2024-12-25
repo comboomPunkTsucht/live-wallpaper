@@ -7,6 +7,8 @@ import { WebVitals } from "@/components/web-vitals";
 import { CaskaydiaCoveNerdFontPropo, CaskaydiaCoveNerdFontMono, CaskaydiaCoveNerdFont } from './fonts'
 import { cn } from "@/lib/utils";
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   title: "Live Wallpaper",
   description: "customizable Live Wallpaper",

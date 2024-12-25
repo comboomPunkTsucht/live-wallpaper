@@ -9,7 +9,10 @@
     "lint": "biome check src",
     "format": "biome check --write src",
     "tauri": "tauri",
-    "prepare": "husky"
+    "prepare": "husky",
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "preview": "yarn pages:build && wrangler pages dev",
+    "deploy": "yarn pages:build && wrangler pages deploy"
   },
   "lint-staged": {
     "src/*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
@@ -23,13 +26,13 @@
     "next": "^15.0.4",
     "next-themes": "^0.4.4",
     "react": "^19.0.0",
-    "react-day-picker": "8.10.1",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@cloudflare/next-on-pages": "^1.13.7",
     "@types/node": "^22.10.1",
     "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.2",
@@ -40,6 +43,7 @@
     "postcss": "^8.4.49",
     "shadcn": "^2.1.7",
     "tailwindcss": "^3.4.16",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "wrangler": "^3.99.0"
   }
 }
