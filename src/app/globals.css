@@ -39,6 +39,8 @@
     --sidebar-accent-foreground: 218 27% 94%; /* nord6 */
     --sidebar-border: 224 16% 32%; /* nord3 */
     --sidebar-ring: 92 28% 65%; /* nord14 */
+
+    --radius: 1.5rem;
   }
 
   .dark {
@@ -77,6 +79,8 @@
     --sidebar-accent-foreground: 218 27% 94%; /* nord6 */
     --sidebar-border: 224 16% 32%; /* nord3 */
     --sidebar-ring: 92 28% 65%; /* nord14 */
+
+    --radius: 1.5rem;
   }
 }
 
