@@ -4,6 +4,7 @@
 
 @layer base {
   :root {
+/* Light Theme */
     --background: 216 16% 16%; /* nord0 */
     --foreground: 218 27% 94%; /* nord6 */
     --muted: 220 16% 22%; /* nord1 */
@@ -12,29 +13,36 @@
     --popover-foreground: 218 27% 94%; /* nord6 */
     --card: 224 16% 32%; /* nord3 */
     --card-foreground: 218 27% 94%; /* nord6 */
-    --border: 220 16% 22%; /* nord1 */
+    --border: 354 42% 56%; /* nord11 */
     --input: 220 16% 22%; /* nord1 */
-    --primary: 193 43% 67%; /* nord8 */
-    --primary-foreground: 218 27% 94%; /* nord6 */
-    --secondary: 179 25% 65%; /* nord7 */
+
+    /* Primärfarbe: Nord Light Grün (Nord 14) */
+    --primary: 92 28% 65%; /* nord14 */
+    --primary-foreground: 220 16% 22%; /* nord1 */
+
+    /* Sekundärfarbe: Rot (Nord 11) */
+    --secondary: 354 42% 56%; /* nord11 */
     --secondary-foreground: 218 27% 94%; /* nord6 */
+
     --accent: 210 34% 63%; /* nord9 */
     --accent-foreground: 218 27% 94%; /* nord6 */
     --destructive: 354 42% 56%; /* nord11 */
     --destructive-foreground: 218 27% 94%; /* nord6 */
-    --ring: 193 43% 67%; /* nord8 */
-    --radius: 0.5rem;
+    --ring: 92 28% 65%; /* nord14 */
+
+    /* Sidebar-Anpassungen */
     --sidebar-background: 220 16% 22%; /* nord1 */
     --sidebar-foreground: 218 27% 80%; /* nord4 */
-    --sidebar-primary: 193 43% 67%; /* nord8 */
+    --sidebar-primary: 92 28% 65%; /* nord14 */
     --sidebar-primary-foreground: 218 27% 94%; /* nord6 */
     --sidebar-accent: 210 34% 63%; /* nord9 */
     --sidebar-accent-foreground: 218 27% 94%; /* nord6 */
     --sidebar-border: 224 16% 32%; /* nord3 */
-    --sidebar-ring: 193 43% 67%; /* nord8 */
+    --sidebar-ring: 92 28% 65%; /* nord14 */
   }
 
   .dark {
+    /* Dark Theme */
     --background: 216 16% 16%; /* nord0 */
     --foreground: 218 27% 94%; /* nord6 */
     --muted: 220 16% 22%; /* nord1 */
@@ -43,25 +51,32 @@
     --popover-foreground: 218 27% 94%; /* nord6 */
     --card: 224 16% 32%; /* nord3 */
     --card-foreground: 218 27% 94%; /* nord6 */
-    --border: 220 16% 22%; /* nord1 */
+    --border: 354 42% 56%; /* nord11 */
     --input: 220 16% 22%; /* nord1 */
-    --primary: 193 43% 67%; /* nord8 */
-    --primary-foreground: 218 27% 94%; /* nord6 */
-    --secondary: 179 25% 65%; /* nord7 */
+
+    /* Primärfarbe: Nord Light Grün (Nord 14) */
+    --primary: 92 28% 65%; /* nord14 */
+    --primary-foreground: 220 16% 22%; /* nord1 */
+
+    /* Sekundärfarbe: Rot (Nord 11) */
+    --secondary: 354 42% 56%; /* nord11 */
     --secondary-foreground: 218 27% 94%; /* nord6 */
+
     --accent: 210 34% 63%; /* nord9 */
     --accent-foreground: 218 27% 94%; /* nord6 */
     --destructive: 354 42% 56%; /* nord11 */
     --destructive-foreground: 218 27% 94%; /* nord6 */
-    --ring: 193 43% 67%; /* nord8 */
+    --ring: 92 28% 65%; /* nord14 */
+
+    /* Sidebar-Anpassungen */
     --sidebar-background: 220 16% 22%; /* nord1 */
     --sidebar-foreground: 218 27% 80%; /* nord4 */
-    --sidebar-primary: 193 43% 67%; /* nord8 */
+    --sidebar-primary: 92 28% 65%; /* nord14 */
     --sidebar-primary-foreground: 218 27% 94%; /* nord6 */
     --sidebar-accent: 210 34% 63%; /* nord9 */
     --sidebar-accent-foreground: 218 27% 94%; /* nord6 */
     --sidebar-border: 224 16% 32%; /* nord3 */
-    --sidebar-ring: 193 43% 67%; /* nord8 */
+    --sidebar-ring: 92 28% 65%; /* nord14 */
   }
 }
 
