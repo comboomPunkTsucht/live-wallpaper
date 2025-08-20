@@ -2,8 +2,6 @@ import {
   Scripts,
   createRootRoute,
 } from "@tanstack/react-router";
-import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
-import { TanstackDevtools } from '@tanstack/react-devtools'
 import  {z} from 'zod';
 import { zodValidator } from "@tanstack/zod-adapter";
 import Particles from "@/components/Particles.tsx";
@@ -51,19 +49,6 @@ export function Layout () {
                 </div>
               )}
           </div>
-        </div>
-        <div className="">
-          <TanstackDevtools
-            config={{
-              position: 'bottom-left',
-            }}
-            plugins={[
-              {
-                name: 'Tanstack Router',
-                render: <TanStackRouterDevtoolsPanel />,
-              },
-            ]}
-          />
         </div>
         <Scripts />
       </div>
