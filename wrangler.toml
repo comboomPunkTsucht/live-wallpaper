@@ -1,0 +1,9 @@
+name = "live-wallpaper"
+compatibility_date = "2025-08-07"
+compatibility_flags = ["nodejs_compat", "no_nodejs_compat_v2"]
+
+[build]
+command = "bunx --bun bun run build"
+
+[observability.logs]
+enabled = true
