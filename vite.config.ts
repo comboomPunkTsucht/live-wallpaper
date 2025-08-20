@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import viteReact from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import viteTsConfigPaths from 'vite-tsconfig-paths'
-import { tanstackRouter } from '@tanstack/router'
+import { tanstackRouter } from '@tanstack/router-plugin/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -10,7 +10,12 @@ export default defineConfig({
     viteTsConfigPaths({
       projects: ['./tsconfig.json'],
     }),
-    tanstackRouter(),
+    tanstackRouter({
+      target: "react",
+      experimental: {
+        enableCodeSplitting: true,
+      }
+    }),
     viteReact(),
     tailwindcss(),
   ],
