@@ -1,0 +1,48 @@
+{
+  "short_name": "Live-Wallpaper",
+  "name": "Live-Wallpaper",
+  "description": "customizable Live Wallpaper",
+  "version": "0.0.1",
+  "author": "Tilo",
+  "homepage": "https://live-wallpaper.mcpeapsunterstrichhd.dev",
+  "url": "/",
+  "license": "MIT",
+  "orientation": "landscape",
+  "lang": "de-DE",
+  "display_mode": "standalone",
+  "dir": "ltr",
+  "display_override": [
+    "window-controls-overlay",
+    "minimal-ui",
+    "fullscreen"
+  ],
+  "related_applications": [
+    {
+      "platform": "web",
+      "url": "https://mcpeapsunterstrichhd.dev",
+      "id": "mahd.webapp"
+    }
+  ],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#2E3440",
+  "background_color": "#2E3440"
+}

@@ -1,0 +1,441 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+/*---break---*/
+@custom-variant dark (&:is(.dark *));
+
+/*-- Fonts --*/
+
+/* CaskaydiaCoveNerdFontPropo */
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontPropo";
+  src: url("/fonts/CaskaydiaCoveNerdFontPropo-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontPropo";
+  src: url("/fonts/CaskaydiaCoveNerdFontPropo-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontPropo";
+  src: url("/fonts/CaskaydiaCoveNerdFontPropo-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontPropo";
+  src: url("/fonts/CaskaydiaCoveNerdFontPropo-BoldItalic.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontPropo";
+  src: url("/fonts/CaskaydiaCoveNerdFontPropo-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontPropo";
+  src: url("/fonts/CaskaydiaCoveNerdFontPropo-LightItalic.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontPropo";
+  src: url("/fonts/CaskaydiaCoveNerdFontPropo-ExtraLight.ttf")
+    format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontPropo";
+  src: url("/fonts/CaskaydiaCoveNerdFontPropo-ExtraLightItalic.ttf")
+    format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontPropo";
+  src: url("/fonts/CaskaydiaCoveNerdFontPropo-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontPropo";
+  src: url("/fonts/CaskaydiaCoveNerdFontPropo-SemiBoldItalic.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontPropo";
+  src: url("/fonts/CaskaydiaCoveNerdFontPropo-SemiLight.ttf") format("truetype");
+  font-weight: 350;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontPropo";
+  src: url("/fonts/CaskaydiaCoveNerdFontPropo-SemiLightItalic.ttf")
+    format("truetype");
+  font-weight: 350;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontPropo";
+  src: url("/fonts/CaskaydiaCoveNerdFontPropo-ExtraLight.ttf")
+    format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontPropo";
+  src: url("/fonts/CaskaydiaCoveNerdFontPropo-ExtraLightItalic.ttf")
+    format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontPropo";
+  src: url("/fonts/CaskaydiaCoveNerdFontPropo-SemiLight.ttf") format("truetype");
+  font-weight: 350;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontPropo";
+  src: url("/fonts/CaskaydiaCoveNerdFontPropo-SemiLightItalic.ttf")
+    format("truetype");
+  font-weight: 350;
+  font-style: italic;
+}
+
+/* CaskaydiaCoveNerdFont */
+@font-face {
+  font-family: "CaskaydiaCoveNerdFont";
+  src: url("/fonts/CaskaydiaCoveNerdFont-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFont";
+  src: url("/fonts/CaskaydiaCoveNerdFont-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFont";
+  src: url("/fonts/CaskaydiaCoveNerdFont-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFont";
+  src: url("/fonts/CaskaydiaCoveNerdFont-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFont";
+  src: url("/fonts/CaskaydiaCoveNerdFont-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFont";
+  src: url("/fonts/CaskaydiaCoveNerdFont-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFont";
+  src: url("/fonts/CaskaydiaCoveNerdFont-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFont";
+  src: url("/fonts/CaskaydiaCoveNerdFont-ExtraLightItalic.ttf")
+    format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFont";
+  src: url("/fonts/CaskaydiaCoveNerdFont-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFont";
+  src: url("/fonts/CaskaydiaCoveNerdFont-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFont";
+  src: url("/fonts/CaskaydiaCoveNerdFont-SemiLight.ttf") format("truetype");
+  font-weight: 350;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFont";
+  src: url("/fonts/CaskaydiaCoveNerdFont-SemiLightItalic.ttf")
+    format("truetype");
+  font-weight: 350;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* CaskaydiaCoveNerdFontMono */
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontMono";
+  src: url("/fonts/CaskaydiaCoveNerdFontMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontMono";
+  src: url("/fonts/CaskaydiaCoveNerdFontMono-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontMono";
+  src: url("/fonts/CaskaydiaCoveNerdFontMono-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontMono";
+  src: url("/fonts/CaskaydiaCoveNerdFontMono-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontMono";
+  src: url("/fonts/CaskaydiaCoveNerdFontMono-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontMono";
+  src: url("/fonts/CaskaydiaCoveNerdFontMono-LightItalic.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontMono";
+  src: url("/fonts/CaskaydiaCoveNerdFontMono-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontMono";
+  src: url("/fonts/CaskaydiaCoveNerdFontMono-SemiBoldItalic.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontMono";
+  src: url("/fonts/CaskaydiaCoveNerdFontMono-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontMono";
+  src: url("/fonts/CaskaydiaCoveNerdFontMono-ExtraLightItalic.ttf")
+    format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontMono";
+  src: url("/fonts/CaskaydiaCoveNerdFontMono-SemiLight.ttf") format("truetype");
+  font-weight: 350;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CaskaydiaCoveNerdFontMono";
+  src: url("/fonts/CaskaydiaCoveNerdFontMono-SemiLightItalic.ttf")
+    format("truetype");
+  font-weight: 350;
+  font-style: italic;
+  font-display: swap;
+}
+/*---break---*/
+
+body {
+  @apply m-0;
+  font-family: "CaskaydiaCoveNerdFontPropo", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "CaskaydiaCoveNerdFontMono", source-code-pro, Menlo, Monaco,
+    Consolas, "Courier New", monospace;
+}
+
+:root,
+.dark {
+  /*-- Colorpalete --*/
+  --nord0: #2e3440;
+  --nord1: #3b4252;
+  --nord2: #434c5e;
+  --nord3: #4c566a;
+  --nord4: #d8dee9;
+  --nord5: #e5e9f0;
+  --nord6: #eceff4;
+  --nord7: #8fbcbb;
+  --nord8: #88c0d0;
+  --nord9: #81a1c1;
+  --nord10: #5e81ac;
+  --nord11: #bf616a;
+  --nord12: #d08770;
+  --nord13: #ebcb8b;
+  --nord14: #a3be8c;
+  --nord15: #b48ead;
+
+  /*-- Colors --*/
+
+  --background: var(--nord0);
+  --foreground: var(--nord6);
+  --muted: var(--nord3);
+  --muted-foreground: var(--nord4);
+  --popover-foreground: var(--nord6);
+  --card: var(--nord0);
+  --card-foreground: var(--nord6);
+  --border: var(--nord11);
+  --input: var(--nord6);
+
+  --primary: var(--nord14);
+  --primary-foreground: var(--nord5);
+
+  --secondary: var(--nord11);
+  --secondary-foreground: var(--nord5);
+
+  --accent: var(--nord11);
+  --accent-foreground: var(--nord5);
+  --destructive: var(--nord1);
+  --destructive-foreground: var(--nord5);
+  --ring: var(--nord14);
+
+  /* Sidebar Adjustments */
+  --sidebar-background: var(--nord1);
+  --sidebar-foreground: var(--nord6);
+  --sidebar-primary: var(--nord14);
+  --sidebar-primary-foreground: var(--nord5);
+  --sidebar-accent: var(--nord11);
+  --sidebar-accent-foreground: var(--nord5);
+  --sidebar-border: var(--nord11);
+  --sidebar-ring: var(--nord14);
+
+  --radius: 1.5rem;
+
+  /* Charts */
+  --chart-1: var(--nord11);
+  --chart-2: var(--nord12);
+  --chart-3: var(--nord13);
+  --chart-4: var(--nord14);
+  --chart-5: var(--nord15);
+  --sidebar: var(--nord0);
+  --popover: var(--nord1);
+}
+
+@theme inline {
+  --font-sans: "CaskaydiaCoveNerdFontPropo", ui-sans-serif, system-ui,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --font-mono: "CaskaydiaCoveNerdFontMono", ui-monospace, SFMono-Regular, Menlo,
+    Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
