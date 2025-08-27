@@ -21,4 +21,9 @@ export default defineConfig({
       { viteEnvironment:{name: "ssr"}, persistState: true, },
     ),
   ],
+  server: {
+    port: 3000,
+    host: true,
+    allowedHosts: ["localhost", "dev.localhost", "dev-local.comboompunktsucht.app", "dev-local.mcpeapsunterstrichhd.dev", "live-wallpaper.mcpeapsunterstrichhd.dev", "live-wallpaper.comboompunktsucht.app"]
+  }
 })
