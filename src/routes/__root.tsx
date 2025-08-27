@@ -5,8 +5,11 @@ import {
 import  {z} from 'zod';
 import { zodValidator } from "@tanstack/zod-adapter";
 import Particles from "@/components/Particles.tsx";
-import cbps_logo from "@/cbps_logo.png";
-import  logo from "@/logo.png";
+import cbps_logo from "@/logos/cbps_logo.png";
+import  mahd_logo from "@/logos/mahd_logo.png";
+import  bd_logo from "@/logos/bd_logo.png";
+import knuddelzwerck_logo from "@/logos/knudelzwerck_logo.png"
+import fabelke_logo from "@/logos/fabelke_logo.png"
 
 const RootSeachParameter = z.object({
   h1: z.string().optional(),
@@ -24,6 +27,7 @@ export function Layout () {
   const search = Route.useSearch();
   const h1 = search.h1 ?? 'Fabian Aps';
   const h2 = search.h2 ?? 'ITler/DJ/Producer aus Leidenschaft';
+  const h1_logo = h1.toLowerCase() === "mcpeaps_HD".toLowerCase() ? mahd_logo : h1.toLowerCase() === "BlackDragon".toLowerCase() ? bd_logo : h1.toLowerCase() === "knuddelzwerck".toLowerCase() ? knuddelzwerck_logo : h1.toLowerCase() === "fabelke".toLowerCase() ? fabelke_logo : undefined;
   return <div className="bg-background text-foreground">
       < Particles quantity={400} refresh={true} />
       <div className="z-1">
@@ -43,9 +47,9 @@ export function Layout () {
                 )}
               </h2>
             </div>
-            {h1 === "mcpeaps_HD" && (
+            {h1_logo !== undefined && (
                 <div className="right-4 bottom-4 fixed">
-                  <img src={logo} alt="mcpeaps_HD Logo" className="sm:h-6 md:h-12 lg:h-24 xl: h-48 mx-auto mb-4" />
+                  <img src={h1_logo} alt={h1 + " Logo"} className="sm:h-6 md:h-12 lg:h-24 xl: h-48 mx-auto mb-4" />
                 </div>
               )}
           </div>
